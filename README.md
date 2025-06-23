@@ -38,12 +38,13 @@ Weather Watch is a simple weather dashboard that lets users check real-time weat
 ##  How to Run
 
 1. Clone the repo:
+   ```
    git clone https://github.com/YOUR_USERNAME/weather-watch.git
-   cd weather-watch
+   cd weather-watch```
 
-2. Get your API key from [openweathermap.org/api](https://openweathermap.org/api)
-   Replace this line in `script.js`:
-   const apiKey = "YOUR_API_KEY_HERE";
+3. Get your API key from [openweathermap.org/api](https://openweathermap.org/api)
+   ```Replace this line in `script.js`:
+   const apiKey = "YOUR_API_KEY_HERE";```
 
-3. Open `index.html` in your browser:
-   start index.html
+4. Open `index.html` in your browser:
+   ```start index.html```
