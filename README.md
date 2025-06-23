@@ -95,7 +95,7 @@ Endpoints used:
 ---
 
 ## Live Preview
-`https://spectacular-rolypoly-371820.netlify.app/`
+- `https://spectacular-rolypoly-371820.netlify.app/`
 
 ---
 
