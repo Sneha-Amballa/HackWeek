@@ -40,7 +40,7 @@ Weather Watch is a simple weather dashboard that lets users check real-time weat
 1. Clone the repo:
    ```
    git clone https://github.com/YOUR_USERNAME/weather-watch.git
-   cd weather-watch```
+   cd weather-watch
 
 3. Get your API key from [openweathermap.org/api](https://openweathermap.org/api)
    ```Replace this line in `script.js`:
