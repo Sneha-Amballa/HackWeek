@@ -106,7 +106,7 @@ Endpoints used:
 
 
 
-#  Deepgram Speech to Text
+# Speech to Text with Deepgram API
 
 A simple and elegant web tool that converts your speech into text using Deepgram’s real-time Speech-to-Text API.
 
