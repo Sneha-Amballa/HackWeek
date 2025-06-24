@@ -103,3 +103,27 @@ Endpoints used:
 #  Colab_Conquer – Iris EDA
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sneha-Amballa/HackWeek/blob/main/Colab_Conquer/iris_eda.ipynb)
+
+
+
+#  Deepgram Speech to Text
+
+A simple and elegant web tool that converts your speech into text using Deepgram’s real-time Speech-to-Text API.
+
+
+##  Features
+
+- 🎤 Start/Stop voice recording
+- 💬 Live transcription
+- 🌐 Uses Deepgram WebSocket API
+- 🧼 Clean and responsive UI
+
+---
+
+##  How to Run This Project
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Sneha-Amballa/HackWeek.git
+cd Speech-to-Text
