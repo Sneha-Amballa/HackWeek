@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COSC Commit Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    .counter {
+      font-size: 80px;
+      margin: 30px 0;
+      color: #0077cc;
+    }
+    button {
+      font-size: 20px;
+      margin: 10px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .increment {
+      background-color: #28a745;
+      color: white;
+    }
+    .decrement {
+      background-color: #dc3545;
+      color: white;
+    }
+    .reset {
+      background-color: #ffc107;
+      color: black;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>COSC Commit Counter</h1>
+  <div class="counter" id="counter">0</div>
+
+  <button class="increment" onclick="increment()">Increment</button>
+  <button class="decrement" onclick="decrement()">Decrement</button>
+  <button class="reset" onclick="reset()">Reset</button>
+
+  <script>
+    let count = 0;
+
+    function updateDisplay() {
+      document.getElementById('counter').textContent = count;
+    }
+
+    function increment() {
+      count++;
+      updateDisplay();
+    }
+
+    function decrement() {
+      if (count > 0) {
+        count--;
+        updateDisplay();
+      }
+    }
+
+    function reset() {
+      count = 0;
+      updateDisplay();
+    }
+  </script>
+
+</body>
+</html>
