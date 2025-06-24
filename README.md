@@ -48,3 +48,55 @@ Weather Watch is a simple weather dashboard that lets users check real-time weat
 
 4. Open `index.html` in your browser:
    ```start index.html```
+
+
+# Simple_API_Data_viewer
+
+This is a simple web application that uses the **Dog CEO API** to display random dog images and allows users to filter them by breed name.
+
+---
+
+##  API Used
+
+**Dog CEO Dog API**  
+ https://dog.ceo/dog-api/
+
+Endpoints used:
+- `https://dog.ceo/api/breeds/image/random/10`  
+  → Fetches 10 random dog images across all breeds.
+
+---
+
+##  How the App Works
+
+- When the page loads, the app fetches **10 random dog images**.
+- Each image contains a **breed name**, extracted from its URL.
+- A **text input** (`breedFilter`) allows users to **filter** the displayed images by breed.
+- As the user types, the images are filtered **in real-time** by matching the breed part of the image URL.
+- All logic is handled in **vanilla JavaScript**, and images are displayed dynamically using DOM manipulation.
+
+---
+
+##  Technologies Used
+
+- HTML
+- CSS
+- JavaScript (ES6)
+- Dog CEO Public API
+
+---
+
+## Files
+
+- `index.html` — Main HTML layout  
+- `style.css` — Styling for the gallery and layout  
+- `script.js` — JavaScript logic for fetching and filtering dog images
+
+---
+
+## Live Preview
+[Click to View](https://spectacular-rolypoly-371820.netlify.app/)
+
+---
+
+
