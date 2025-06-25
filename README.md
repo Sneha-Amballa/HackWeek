@@ -149,3 +149,15 @@ A visually stunning, stat-packed, and fan-friendly one-page website showcasing m
 - **JavaScript** – interactivity (modal popup)
 
 
+# Budget_Tracker
+
+A beginner-friendly budget tracker app that lets you input expenses and view a pie chart visualization using Chart.js.
+
+## Features
+- Add category and amount
+- View pie chart for expenses
+- Responsive and interactive
+
+## How to Run
+1. Clone this repo
+2. Open `index.html` in your browser
