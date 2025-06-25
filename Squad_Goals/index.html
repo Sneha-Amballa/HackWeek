@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Squad Goals - Dream Cricket Team</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="team-logo.png" alt="Team Logo" class="team-logo">
+    <h1>Royal Smashers</h1>
+    <p class="slogan">"Play Bold. Hit Hard."</p>
+  </header>
+
+  <main class="player-grid">
+    <!-- Player Cards -->
+    <div class="player-card" onclick="openModal(0)">
+      <img src="player1.jpg" alt="Player 1">
+      <h3>Virat Kohli</h3>
+      <p>Batsman</p>
+    </div>
+    <div class="player-card" onclick="openModal(1)">
+      <img src="player2.png" alt="Player 2">
+      <h3>MS Dhoni</h3>
+      <p>Wicket Keeper</p>
+    </div>
+    <div class="player-card" onclick="openModal(2)">
+      <img src="player3.png" alt="Player 3">
+      <h3>Jasprit Bumrah</h3>
+      <p>Bowler</p>
+    </div>
+    <!-- Add more players as needed -->
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="playerModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalName"></h2>
+      <p id="modalRole"></p>
+      <ul>
+        <li><strong>Strike Rate:</strong> <span id="modalSR"></span></li>
+        <li><strong>Matches Played:</strong> <span id="modalMatches"></span></li>
+        <li><strong>Jersey Number:</strong> <span id="modalJersey"></span></li>
+        <li><strong>Best Performance:</strong> <span id="modalBest"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
