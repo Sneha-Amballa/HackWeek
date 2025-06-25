@@ -127,3 +127,25 @@ A simple and elegant web tool that converts your speech into text using Deepgram
 ```bash
 git clone https://github.com/Sneha-Amballa/HackWeek.git
 cd Speech-to-Text
+
+
+# Squad_Goals
+A visually stunning, stat-packed, and fan-friendly one-page website showcasing my custom cricket team — **Royal Smashers**!
+
+## Project Features
+
+-  Team name, logo, and catchy slogan
+-  Stylish player cards in a responsive grid
+-  Modal popup with bonus player stats like:
+  - Strike Rate
+  - Matches Played
+  - Jersey Number
+  - Best Performance
+
+##  Tech Stack
+
+- **HTML** – structure
+- **CSS** – styling and layout
+- **JavaScript** – interactivity (modal popup)
+
+
