@@ -124,7 +124,6 @@ A simple and elegant web tool that converts your speech into text using Deepgram
 
 ### Clone the repository
 
-```bash
 git clone https://github.com/Sneha-Amballa/HackWeek.git
 cd Speech-to-Text
 
@@ -181,10 +180,9 @@ This is a simple college admission form built with Express.js. Users can apply f
 
 
 
-#  Resume Analyzer CLI Tool
+# Resume Analyzer CLI Tool
 
 This is a Python command-line tool that analyzes a resume (PDF format) to identify which predefined skills are present or missing. It's useful for job seekers to evaluate how well their resume aligns with key skills in the industry.
-
 
 ---
 
@@ -195,23 +193,18 @@ This is a Python command-line tool that analyzes a resume (PDF format) to identi
 
 Install dependencies using pip:
 
-```bash
 pip install pymupdf
 
-
 ## How to Run
-###Prepare Your Resume:
-
+### Prepare Your Resume:
 Save your resume as a .pdf file.
 
 Place it in the project directory or provide its full path when running the script.
 
-###Update the skills.txt:
-
+### Update the skills.txt:
 List the skills you want to check, one skill per line.
 
-###Run the Tool:
-
+### Run the Tool:
 Open your terminal or command prompt and run:
-```bash
+
 python main.py <path_to_resume.pdf>
