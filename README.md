@@ -161,3 +161,20 @@ A beginner-friendly budget tracker app that lets you input expenses and view a p
 ## How to Run
 1. Clone this repo
 2. Open `index.html` in your browser
+
+
+# Express_Admission
+
+This is a simple college admission form built with Express.js. Users can apply for courses, and their data is stored temporarily in memory.
+
+## How to Run
+
+1. Clone the repo
+2. Run `npm install`
+3. Start server with `node app.js`
+4. Visit `http://localhost:3000/admission` in your browser
+
+## Technologies
+- Node.js
+- Express.js
+- HTML & CSS
