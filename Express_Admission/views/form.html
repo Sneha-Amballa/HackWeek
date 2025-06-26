@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>College Admission Form</h2>
+    <form action="/admission" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="tel" name="phone" placeholder="Phone Number" required><br>
+      <select name="course" required>
+        <option value="" disabled selected>Select a Course</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Mechanical">Mechanical</option>
+      </select><br>
+      <button type="submit">Apply</button>
+    </form>
+  </div>
+</body>
+</html>
