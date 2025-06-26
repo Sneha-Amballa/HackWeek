@@ -178,3 +178,40 @@ This is a simple college admission form built with Express.js. Users can apply f
 - Node.js
 - Express.js
 - HTML & CSS
+
+
+
+#  Resume Analyzer CLI Tool
+
+This is a Python command-line tool that analyzes a resume (PDF format) to identify which predefined skills are present or missing. It's useful for job seekers to evaluate how well their resume aligns with key skills in the industry.
+
+
+---
+
+## Requirements
+
+- Python 3.6 or above
+- `PyMuPDF` library (also known as `fitz`)
+
+Install dependencies using pip:
+
+```bash
+pip install pymupdf
+
+
+## How to Run
+###Prepare Your Resume:
+
+Save your resume as a .pdf file.
+
+Place it in the project directory or provide its full path when running the script.
+
+###Update the skills.txt:
+
+List the skills you want to check, one skill per line.
+
+###Run the Tool:
+
+Open your terminal or command prompt and run:
+```bash
+python main.py <path_to_resume.pdf>
