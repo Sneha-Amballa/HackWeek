@@ -208,3 +208,15 @@ List the skills you want to check, one skill per line.
 Open your terminal or command prompt and run:
 
 python main.py <path_to_resume.pdf>
+
+
+# The Database Forge
+
+## Description
+A simple Python ORM project using SQLAlchemy and SQLite3. Creates `categories` and `products` tables, populates them with sample data, and prints product details including category.
+
+## Setup
+
+```bash
+pip install sqlalchemy
+python main.py
