@@ -220,3 +220,13 @@ A simple Python ORM project using SQLAlchemy and SQLite3. Creates `categories` a
 ```bash
 pip install sqlalchemy
 python main.py
+
+
+# Scan My QR
+
+A simple QR code scanner app using `html5-qrcode`. You can scan QR codes using your webcam or upload an image.
+
+##  Features
+- Scan from camera
+- Scan from uploaded images
+- Displays QR content
