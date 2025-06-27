@@ -230,3 +230,29 @@ A simple QR code scanner app using `html5-qrcode`. You can scan QR codes using y
 - Scan from camera
 - Scan from uploaded images
 - Displays QR content
+
+
+# 📝 Markdown to HTML Converter
+
+A simple Python command-line tool that converts a `.md` (Markdown) file into a `.html` file using standard Markdown syntax.
+
+---
+
+## 📌 Features
+
+- Converts headers (`#`, `##`, etc.)
+- Supports **bold**, *italics*, lists, links, code blocks, and more
+- Clean HTML output
+- Easy to run – beginner-friendly
+
+---
+
+## 🛠️ Requirements
+
+- Python 3.x
+- [`markdown`](https://pypi.org/project/Markdown/) library
+
+Install using pip:
+
+```bash
+pip install markdown
