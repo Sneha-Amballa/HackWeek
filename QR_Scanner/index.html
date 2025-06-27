@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan My QR</title>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    #reader {
+      margin: auto;
+      width: 300px;
+    }
+    #result {
+      font-size: 1.2rem;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>QR Code Scanner</h1>
+  <div id="reader"></div>
+
+  <p><strong>Result:</strong> <span id="result">Waiting...</span></p>
+
+  <input type="file" id="file-input" accept="image/*" />
+  
+  <script src="script.js"></script>
+</body>
+</html>
