@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TimeZoneBuddy</title>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f6ff;
+      padding: 40px;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    label {
+      margin-top: 15px;
+      display: block;
+      font-weight: bold;
+    }
+    select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 20px;
+      background: #2c3e50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1a252f;
+    }
+    .result {
+      margin-top: 25px;
+      background: #eaf4ff;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .slot {
+      padding: 8px;
+      margin-bottom: 5px;
+      background: #d0e6ff;
+      border-radius: 6px;
+    }
+    .no-slot {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>TimeZoneBuddy</h2>
+
+    <label for="city1">City 1:</label>
+    <select id="city1">
+      <option value="Asia/Kolkata">India (Kolkata)</option>
+      <option value="America/New_York">USA (New York)</option>
+      <option value="Europe/London">UK (London)</option>
+      <option value="Asia/Tokyo">Japan (Tokyo)</option>
+    </select>
+
+    <label for="city2">City 2:</label>
+    <select id="city2">
+      <option value="Asia/Kolkata">India (Kolkata)</option>
+      <option value="America/New_York">USA (New York)</option>
+      <option value="Europe/London">UK (London)</option>
+      <option value="Asia/Tokyo">Japan (Tokyo)</option>
+    </select>
+
+    <button onclick="findOverlap()">Find Overlapping Slots</button>
+
+    <div class="result" id="output"></div>
+  </div>
+
+  <script>
+    const { DateTime } = luxon;
+
+    function findOverlap() {
+      const zone1 = document.getElementById('city1').value;
+      const zone2 = document.getElementById('city2').value;
+      const resultDiv = document.getElementById('output');
+      resultDiv.innerHTML = '';
+
+      let overlap = [];
+
+      for (let hour = 9; hour <= 20; hour++) {
+        let time1 = DateTime.local().set({ hour, minute: 0 }).setZone(zone1);
+        let time2 = time1.setZone(zone2);
+
+        if (
+          time1.hour >= 9 && time1.hour <= 20 &&
+          time2.hour >= 9 && time2.hour <= 20
+        ) {
+          overlap.push({
+            [zone1]: time1.toFormat('hh:mm a'),
+            [zone2]: time2.toFormat('hh:mm a')
+          });
+        }
+      }
+
+      if (overlap.length === 0) {
+        resultDiv.innerHTML = `<p class="no-slot">❌ No overlapping time slots found.</p>`;
+      } else {
+        resultDiv.innerHTML = `<h3>✅ Available Time Slots:</h3>`;
+        overlap.forEach(slot => {
+          resultDiv.innerHTML += `
+            <div class="slot">
+              <b>${zone1}:</b> ${slot[zone1]} |
+              <b>${zone2}:</b> ${slot[zone2]}
+            </div>
+          `;
+        });
+      }
+    }
+  </script>
+</body>
+</html>
