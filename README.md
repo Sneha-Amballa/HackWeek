@@ -256,3 +256,17 @@ Install using pip:
 
 ```bash
 pip install markdown
+
+
+
+# VoiceNotes_to_TaskList
+
+A voice-controlled to-do list using the Web Speech API and vanilla JavaScript.
+
+##  Features
+- Add tasks by speaking
+- Click to mark tasks as completed
+
+##  Setup
+1. Clone the repo
+2. Open `index.html` in your browser
